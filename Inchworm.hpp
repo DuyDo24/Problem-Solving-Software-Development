@@ -1,6 +1,3 @@
-#ifndef INCHWORM_HPP
-#define INCHWORM_HPP
-
 class Inchworm {
 public:
     int lunchtime(int branch, int rest, int leaf) {
@@ -13,4 +10,3 @@ public:
     }
 };
 
-#endif 
