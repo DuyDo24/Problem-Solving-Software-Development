@@ -6,6 +6,9 @@ public:
     int freeParks(string street){
         int count = 0;
         for (int i = 0; i < street.size(); i++){
+            if (street[i] != '-') {
+                continue; 
+            }
             if (street[i] == 'D' || street[i] == 'B' || street[i] == 'S'){
                 continue;
             } 
