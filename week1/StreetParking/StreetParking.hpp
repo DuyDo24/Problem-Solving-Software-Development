@@ -12,10 +12,10 @@ public:
             if (i - 1 >= 0 && (street[i - 1] == 'B' || street[i - 1] == 'S')) {
                 continue;
             }
-            if (i + 2 >= 0 && street[i - 2] == 'B') {
+            if (i - 2 >= 0 && street[i - 2] == 'B') {
                 continue;
             }
-            if (i + 1 < street.size() && street[i + 1] == 'S') {
+            if (i + 1 <= street.size() && street[i + 1] == 'S') {
                 continue;
             }
             count++;
