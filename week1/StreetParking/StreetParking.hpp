@@ -9,7 +9,7 @@ public:
             if (street[i] == 'D' || street[i] == 'B' || street[i] == 'S'){
                 continue;
             } 
-            if (i + 1 < street.size() && (street[i + 1] == 'B' || street[i - 1] == 'S')) {
+            if (i + 1 < street.size() && (street[i + 1] == 'B' || street[i + 1] == 'S')) {
                 continue;
             }
             if (i + 2 < street.size() && street[i + 2] == 'B') {
