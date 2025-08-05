@@ -41,3 +41,17 @@ i attempt. The only obstacle that made me think was with the edge cases and figu
 this problem. Overall quite a straightforward question and easy to code it out.
 
 
+CircularLine - 
+Initial Thoughts:
+This question seems similar to the ThrowTheBall question where it involves a circle, i could apply the same idea in that question 
+but unsure. I can already tell i will have trouble solving this question because i believe i have to keep track of all stations 
+and their two ways of reaching each station, i use the min of both ways and then compare it with the current max. I believe i 
+would have to compare each station with another station to cover all possible combinations. I think i can achieve this using the 
+sliding window method with two pointers where the first pointer starts at the beginning and the second pointer moves until it reaches 
+the end. Another idea is to use a nested for loop which in theory would be a lot easier to implement even though it would be O(n^2).
+
+Reflection:
+After attempting to code it out, i realised i didnt need to calculate both ways around the circle as calculating one way gives us the other
+way if we simply subtract from the total sum of all elements. This is the approach i took to solve this question using my previous 
+knowledge of the modulo operater in case of the wrap around. I could've improved if i thought about using the totalsum earlier 
+rather than realise it after a lot of coding. Overall i think im starting to understand it better now.
