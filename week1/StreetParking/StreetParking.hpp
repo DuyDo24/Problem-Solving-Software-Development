@@ -15,11 +15,11 @@ public:
             if (i - 2 >= 0 && street[i - 2] == 'B') {
                 continue;
             }
-            if (i + 1 <= street.size() && street[i + 1] == 'S') {
+            if (i + 1 < street.size() && street[i + 1] == 'S') {
                 continue;
             }
             count++;
         }
-        return count;
+        return count -1;
     }
 };
