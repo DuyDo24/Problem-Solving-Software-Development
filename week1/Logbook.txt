@@ -65,3 +65,7 @@ i will have to use modulo again. I can just add up all angles like normally and 
 361 == 1. Other than that it seems pretty simple to code this up.
 
 Reflection:
+Overall the problem was quite easy to understand and the two main obsstacles i faced was grabbing the number after the string which
+i was required to do some research using substring and stoi. Besides that i still have a hard time grasping the modulo and how
+it wraps around, i feel like i understand it but its still hard to grasp. I need to study more proabably using visuals to properly 
+get it down pat.
