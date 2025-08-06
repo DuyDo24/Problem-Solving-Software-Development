@@ -55,3 +55,13 @@ After attempting to code it out, i realised i didnt need to calculate both ways 
 way if we simply subtract from the total sum of all elements. This is the approach i took to solve this question using my previous 
 knowledge of the modulo operater in case of the wrap around. I could've improved if i thought about using the totalsum earlier 
 rather than realise it after a lot of coding. Overall i think im starting to understand it better now.
+
+
+AzimuthMonitering - 
+Initial Thougths:
+My first thought is to use a for loop to go through each string in the vector and change the azimuth based on what it says, so if
+turning right, you simply add 90 and likewise for left. Again the only issue is when it wraps around from 359 to 0, im assuming 
+i will have to use modulo again. I can just add up all angles like normally and calculate the real angle at the end because for example
+361 == 1. Other than that it seems pretty simple to code this up.
+
+Reflection:
