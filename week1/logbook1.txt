@@ -69,3 +69,10 @@ Overall the problem was quite easy to understand and the two main obsstacles i f
 i was required to do some research using substring and stoi. Besides that i still have a hard time grasping the modulo and how
 it wraps around, i feel like i understand it but its still hard to grasp. I need to study more proabably using visuals to properly 
 get it down pat.
+
+OVERALL REFECTION:
+Each problem besides azimuth monitering and circular line i was able to figure out the solution quite easily and since it was a range
+of topics i was able to see my strengths and weaknesses, its clear to me that i struggle with using modulo to achieve the wrap around
+in a circle question but besides that althought these are easy quesitons i was able to strategise and use a proper approach. This
+method is a lot better than when i was doing leetcode by trying to code the question before fully understanding it, i really like
+the progress im making even though its only been one week. 
