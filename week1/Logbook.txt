@@ -1,0 +1,71 @@
+Inchworm - 
+Initial Thoughts:
+This problem seems simple and i can see a brute force solution that would solve it by calculating each leaf location and matching 
+it with the worms rest inbetween moves but i know this isn't optimal. Im thinking about using a for loop and an if statement 
+that determines whether is a common multiple of each leaf. I should keep a count that increments everytime it rests on a leaf 
+and return that once the length of the branch is exceeded.
+
+Reflection:
+I first approached this problem by thinking about how the loop would work, i knew it was a for loop starting from 0 and it should 
+stop when it reaches the end of the branch. I then figured out that it should move by int rest and then simply determine whether 
+if it stops on a leaf. I did that by finding a multiple of leaf using modulo with a count. This is done in O(n) and probably there
+exists a solution in O(1) using an inbuilt function that takes the value rather than looping it.
+
+
+ThrowTheBall - 
+Initial thoughts:
+Im thinking of using an unordered map that tracks each player to the value of times they have held the ball, this way we can track
+each player individually to their key value checking whether it equals to M times. Passing the ball left and right seems a bit
+troubling as for example if 5 is passing left to 1 how would the code reflect that. That the only issue i forsee and dont know 
+how to overcome.I changed my mind, i think i could acheive the same thing using a vector becasue it doesnt need the player number 
+just the value of times they have held the ball.
+
+Reflection:
+I figured out the initial starting process by using a vector that keeps track and a current counter that keeps track of the ball
+ie : received[current] and initialing it to start at 1. This way i can keep track of who as the ball, figuring out whether it
+was even or odd was quite easy but i needed help from a tutor to figure out how to loop around. I ended up figuring it out using
+modulo to calculate the remainder to keep track of who has the ball. Overall i took a long time with this question but glad i 
+got it in the end with the assistance with a tutor.
+
+
+StreetParking - 
+Initial thoughts:
+My first thought was to loop through the string using 7 if statements each time to check if its avaliable for parking, i cant see
+any other method even though it would take a long time to complete. I think i'll just use a for loop and for those that said can't 
+be before or after, simply i - 1 or i + 1. I will need to do edge cases though for the start and end of the string.
+
+Reflection: 
+After attempting the problem, i realised that i can do it in a shorter amount of if staments as they are very similar and using
+or statements can make my code more concise. I should visulaise the problem in my head so i can gain a clearer understanding before 
+i attempt. The only obstacle that made me think was with the edge cases and figuring out the most optimal if statements to solve
+this problem. Overall quite a straightforward question and easy to code it out.
+
+
+CircularLine - 
+Initial Thoughts:
+This question seems similar to the ThrowTheBall question where it involves a circle, i could apply the same idea in that question 
+but unsure. I can already tell i will have trouble solving this question because i believe i have to keep track of all stations 
+and their two ways of reaching each station, i use the min of both ways and then compare it with the current max. I believe i 
+would have to compare each station with another station to cover all possible combinations. I think i can achieve this using the 
+sliding window method with two pointers where the first pointer starts at the beginning and the second pointer moves until it reaches 
+the end. Another idea is to use a nested for loop which in theory would be a lot easier to implement even though it would be O(n^2).
+
+Reflection:
+After attempting to code it out, i realised i didnt need to calculate both ways around the circle as calculating one way gives us the other
+way if we simply subtract from the total sum of all elements. This is the approach i took to solve this question using my previous 
+knowledge of the modulo operater in case of the wrap around. I could've improved if i thought about using the totalsum earlier 
+rather than realise it after a lot of coding. Overall i think im starting to understand it better now.
+
+
+AzimuthMonitering - 
+Initial Thougths:
+My first thought is to use a for loop to go through each string in the vector and change the azimuth based on what it says, so if
+turning right, you simply add 90 and likewise for left. Again the only issue is when it wraps around from 359 to 0, im assuming 
+i will have to use modulo again. I can just add up all angles like normally and calculate the real angle at the end because for example
+361 == 1. Other than that it seems pretty simple to code this up.
+
+Reflection:
+Overall the problem was quite easy to understand and the two main obsstacles i faced was grabbing the number after the string which
+i was required to do some research using substring and stoi. Besides that i still have a hard time grasping the modulo and how
+it wraps around, i feel like i understand it but its still hard to grasp. I need to study more proabably using visuals to properly 
+get it down pat.
