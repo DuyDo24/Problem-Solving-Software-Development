@@ -1,2 +1,9 @@
-ChangingString:
-Initial Thoughts - 
+ChangingString -
+Initial Thoughts:
+At first i took me a lot of time to understand the question because im not very familiar with ascii but i get the concept of the 
+question. I have to change K characters in A to be as close as it can to string B and then calculate the absolute value which
+should be easy to do. The hard issue with this problem is figuring out which strings to change, my idea is to first calculate the 
+biggest difference in inital string and change the biggest ones.
+
+Reflection:
+
