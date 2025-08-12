@@ -15,9 +15,20 @@ public:
         //sort from descneding order
         sort(diff.begin(), diff.end(), greater<int>());
 
-        //find K biggest elements in diff
-        for (int i = 0; i < K; i++){
-            diff[i] = 0;
+        int changes = K;
+        for (int i = 0; i < size && changes > 0; i++){
+            if (diff[i] > 0){
+                diff[i] = 0;
+                changes--;
+            }
+        }
+
+        // if we still have changes left, apply to smallest distances
+        for (int i = size - 1; i >= 0 && changes > 0; i--){
+            if (diff[i] == 0){
+                diff[i] = 1; 
+                changes--;
+            }
         }
 
         int result = 0;
