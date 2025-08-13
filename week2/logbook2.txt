@@ -26,3 +26,9 @@ allow a 50x50 grid meaning this code would still be optimal for the max size. I 
 grids but overall i think i did pretty well considering i havn't touched nested loops in a long time.
 
 
+EggCartons - 
+Initial Thoughts:
+This question looks simple but i believe its deceiving, from the example a clue i found was that if it is odd then its immediatly 
+impossible as 6 and 8 are even numbers. Since it wants the minimal amount of egg cartons i want to try a brute force solution 
+where i use 8 cartons as mamy times and possible until it exceeds the total amount and if it doesn't work, add one 6 and reduce 
+by 8. This way it would check every possible outcome using the most minimal way as 8 is larger than 6. 
