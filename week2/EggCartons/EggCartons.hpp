@@ -16,7 +16,8 @@ public:
                 total += 8;
                 count++;
             }
+            return count;
         }
-        return count;
+        return -1;
     }
 };
