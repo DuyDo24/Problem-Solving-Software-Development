@@ -11,7 +11,7 @@ public:
         if (n == 10){
             return -1;
         }
-        if (n == 6){
+        if (n == 6 || n == 8){
             return 1;
         }
         if (n >= 12){
