@@ -18,17 +18,31 @@ public:
         g -= minimum;      
         b -= minimum;  
         
-        while (k > 0) {
-            if (r > 0 && k == 1) return "RED";
-            if (r > 0) { r--; k--; }
-            
-            if (g > 0 && k == 1) return "GREEN";
-            if (g > 0) { g--; k--; }
-            
-            if (b > 0 && k == 1) return "BLUE";
-            if (b > 0) { b--; k--; }
+        int colors_left = 0;
+        if (r > 0) colors_left++;
+        if (g > 0) colors_left++;
+        if (b > 0) colors_left++;
+        
+        if (colors_left == 2) {
+            // Two colors remaining - they alternate
+            if (r == 0) {
+                // Only green and blue left, pattern: GREEN, BLUE, GREEN, BLUE...
+                if ((k - 1) % 2 == 0) return "GREEN";
+                return "BLUE";
+            } else if (g == 0) {
+                // Only red and blue left, pattern: RED, BLUE, RED, BLUE...
+                if ((k - 1) % 2 == 0) return "RED";
+                return "BLUE";
+            } else {
+                // Only red and green left, pattern: RED, GREEN, RED, GREEN...
+                if ((k - 1) % 2 == 0) return "RED";
+                return "GREEN";
+            }
+        } else {
+            // Only one color remaining
+            if (r > 0) return "RED";
+            if (g > 0) return "GREEN";
+            return "BLUE";
         }
-
-        return ""; 
     }
 };
