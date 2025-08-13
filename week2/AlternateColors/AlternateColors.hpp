@@ -41,6 +41,6 @@ public:
             return "GREEN";
         }
   
-        return "BLUE";
+        return "BAKAAAAA";
     }
 };
