@@ -11,6 +11,9 @@ public:
         if (n == 10){
             return -1;
         }
+        if (n == 6){
+            return 1;
+        }
         if (n >= 12){
             while (total < n){
                 total += 8;
