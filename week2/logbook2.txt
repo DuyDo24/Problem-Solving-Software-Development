@@ -6,4 +6,23 @@ should be easy to do. The hard issue with this problem is figuring out which str
 biggest difference in inital string and change the biggest ones.
 
 Reflection:
+I could code the question well but i struggled with changing exactly K elements, i figured out how to change at most K elements 
+so it struggled with questions such as "aa" "aa" where i wouldn't change anything and still returning 0 which is wrong. I finally
+figured it out in the end by simply altering the minimal distance by 1 if it was a 0 so in the example shown the distance would 
+be 2 if K was 2. Overall this question stumped me at first but i think next time i should use more comments because i just tried 
+using them again and it helps my thinking process.
+
+SquareOfDigits - 
+Initial Thoughts:
+The question is easy to understand but im having difficulty thinking of a solution, i want to try a brute force solution where i 
+check every single square possible. Since its the largest square, i want to use nested loops to first check the sides, then check
+the rows and columns. Im not very familiar with matrices in c++ so ill try my best, i remember doing them in matlab and i just
+have to figure out how to compare the right indexes.
+
+Reflection:
+This question i used brute force to check every single square starting from the outside and moving in every time, i needed time
+to correctly calculate the right indexes but i got it in the end. I believe this is the most optimal code as the constraints only
+allow a 50x50 grid meaning this code would still be optimal for the max size. I cant think of a more optimal solution for bigger 
+grids but overall i think i did pretty well considering i havn't touched nested loops in a long time.
+
 
