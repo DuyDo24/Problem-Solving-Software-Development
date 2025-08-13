@@ -32,3 +32,10 @@ This question looks simple but i believe its deceiving, from the example a clue 
 impossible as 6 and 8 are even numbers. Since it wants the minimal amount of egg cartons i want to try a brute force solution 
 where i use 8 cartons as mamy times and possible until it exceeds the total amount and if it doesn't work, add one 6 and reduce 
 by 8. This way it would check every possible outcome using the most minimal way as 8 is larger than 6. 
+
+Reflection:
+I used a non-conventional apprach with this question because i noticed a pattern with the carton, the correct way is the way i 
+explained above but i couldn't find a way to implement it. because 8 is larger then 6, for every number above 12 that is even, each
+number is possible so you just count the number of 8 until it reaches above n. Although u could change it for 6 it still returns
+the same number. i manipulated this method while adding edge cases for numbers below 12, although it works i still feel like i 
+cheated not following the proper method.

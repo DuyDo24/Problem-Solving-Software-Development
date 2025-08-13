@@ -1,24 +1,13 @@
 using namespace std;
 
-class EggCartons{
+class EggCartons {
 public:
-    int minCartons(int n){
-        if (n % 2 != 0){
-            return -1;
-        }
-        int count = 0;
-        int total = 0;
-        if (n == 10){
-            return -1;
-        }
-        if (n == 6 || n == 8){
-            return 1;
-        }
-        if (n >= 12){
-            while (total < n){
-                total += 8;
-                count++;
-            }
+    int minCartons(int n) {
+        if (n % 2 != 0 || n == 10) return -1;
+        if (n == 6 || n == 8) return 1;
+        if (n >= 12) {
+            int count = n / 8;
+            if (n % 8 != 0) count++;
             return count;
         }
         return -1;
