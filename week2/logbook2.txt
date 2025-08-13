@@ -39,3 +39,15 @@ explained above but i couldn't find a way to implement it. because 8 is larger t
 number is possible so you just count the number of 8 until it reaches above n. Although u could change it for 6 it still returns
 the same number. i manipulated this method while adding edge cases for numbers below 12, although it works i still feel like i 
 cheated not following the proper method.
+
+
+AlternateColors - 
+Initial Thoughts:
+At first i noticed that this question has high constraits so brute forcing the solution will not work, i want to attempt a solution
+where i figure out the position of where k is by dividing it by 3. For example if they all had one and k was 3, simply 3/3 which is 
+exactly one, making the last ball the choice. if it was 4 or 5, there would be remainder of .333 and .666, i want to use this to
+my advantage to calculate the right ball. The only difficult part i forsee is when a color runs out, then it would be divided by 2, 
+im not sure how to combat that but ill try my best.
+
+Reflection:
+
