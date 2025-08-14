@@ -16,8 +16,7 @@ public:
             }
         }
 
-        int minDissatisfaction = 10000;
-
+        int minDissatisfaction = 100000000;
         for (auto &mooCow : cows) {
             int total = 0;
             for (auto &otherCow : cows) {
@@ -29,7 +28,6 @@ public:
             }
             minDissatisfaction = min(minDissatisfaction, total);
         }
-
         return minDissatisfaction;
     }
 };
