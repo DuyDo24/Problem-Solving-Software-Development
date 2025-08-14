@@ -50,4 +50,28 @@ my advantage to calculate the right ball. The only difficult part i forsee is wh
 im not sure how to combat that but ill try my best.
 
 Reflection:
+This quesiton was the hardest one ive attempted yet, i needed help from tutors and friends at assist me becasue it was so difficult.
+I could do the first park where if k was less than the minimum * 3 so no balls have run out but it gets diffult once it has run out.
+Once a colour is depleted i had to do all possible scenarios of combinations and then repeat that when its one colour but ofcourse 
+if one colour remains and k isn't 0, it outputs that colour. This question was very eye opening and its clear i need some more practice 
+if i want to do well in the prac exams.
 
+
+MooingCows - 
+Initial Thoughts:
+This question look deceiving at first because it requires some maths to calculate the disatisfation, I have an idea to first locate
+each cow into a vector of pairs and then use a nested for loop to calculate the minimum disatisfation. I dont currently see an 
+issue with this method as its quite straightfoward.
+
+Reflection:
+This question went smoothly as i was able to solve it using the same method as what i initially thought, i did run into a small
+obstacle because im not very familiar with looping with pairs so i had to do some research. I think im slowing getting better with 
+questions like these although i still take quite a bit of time to figure it out. This question was really useful in gauging my level
+right now.
+
+
+OVERALL REFLECTION -
+Doing this pratical every week has definetly improved my mental ability to solve problems, these questions are more fun and challenging
+rather then grueling. Each question here was more difficult than the first week questions besides eggcartons because i cheesed it.
+I feel like im getting better everytime but i hate feeling stuck on quesitons that are out of my reach, i give up easily and always seek
+help from friends for a logical solution. 
