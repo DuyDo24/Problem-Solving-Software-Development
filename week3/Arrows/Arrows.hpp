@@ -27,7 +27,7 @@ public:
             }
             if (s[i] == '>'){
                 int len = 1;
-                int j = j - 1;
+                int j = i - 1;
                 while (j > 0 && s[j] == '-'){
                     j--;
                     len++;
@@ -35,7 +35,7 @@ public:
                 maxlength = max(len, maxlength);
 
                 len = 1;
-                j = j - 1;
+                j = i - 1;
                 while (j > 0 && s[j] == '='){
                     j--;
                     len++;
