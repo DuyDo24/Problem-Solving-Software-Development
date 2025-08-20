@@ -20,8 +20,8 @@ public:
     }
 
     int minSums(string numbers, int sum) {
-        best = -1;
+        best = 10000000;
         dfs(numbers, sum, 0, 0, 0);
-        return best;
+        return (best == 10000000) ? -1 : best;
     }
 };
