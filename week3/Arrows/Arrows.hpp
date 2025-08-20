@@ -28,7 +28,7 @@ public:
             if (s[i] == '>'){
                 int len = 1;
                 int j = i - 1;
-                while (j > 0 && s[j] == '-'){
+                while (j >= 0 && s[j] == '-'){
                     j--;
                     len++;
                 }
@@ -36,7 +36,7 @@ public:
 
                 len = 1;
                 j = i - 1;
-                while (j > 0 && s[j] == '='){
+                while (j >= 0 && s[j] == '='){
                     j--;
                     len++;
                 }
