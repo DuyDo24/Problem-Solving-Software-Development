@@ -7,3 +7,18 @@ recursion to break the number down and calling itself checking every time it rec
 if i cant get it ill have to get some help.
 
 Reflection:
+This question took me an hours to really get the concept down but i finally got it with some verbal help from a friend because
+i struggled in thinking of the logic behind the recursion. IM not very familiar with recursion and is probably my weakest point 
+but i managed to get this quesiton done. I go the concept in the end but recursion to me is still quite a issue i face with. 
+I just finished my first prac exam and both B questions could have been solved with recursion which i couldn't even fathom, this 
+question and that exam has shown me how far behind i am so im going to keep giving it my best.
+
+
+Arrows - 
+Initial Thoughts:
+This quesiton looks quite easy to accomplish, im thinking of using a loop to figure out all the arrows and then simply return 
+longest one. The only hard part is distinguishing what is an arrow or not. IM thinking if its a < arrow simple determine if there
+is a - or = next to it and continue the count until it isn't. Then i can use another for loop to go backwards and scan the > 
+for the longest arrow. Then out of the two loops i can simply return the longest one.
+
+Reflection:
