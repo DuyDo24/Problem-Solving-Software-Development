@@ -1,3 +1,9 @@
 QuickSums - 
 Initial Thoughts:
-This question looks very difficult but interesting because im not sure 
+This question looks very difficult but interesting because im not sure where to start, i have an obvious brute force solution 
+so im going to attempt that, where i add a + in everypossible combination besides the start and end of course. Since the constraints
+state that 10 would be the largest number, only 9 spot for combinations are possible making it 9! loops. Im thinking of using
+recursion to break the number down and calling itself checking every time it recahes the target. Im going to try my best but
+if i cant get it ill have to get some help.
+
+Reflection:
