@@ -22,3 +22,18 @@ is a - or = next to it and continue the count until it isn't. Then i can use ano
 for the longest arrow. Then out of the two loops i can simply return the longest one.
 
 Reflection:
+This question was easily doable, only tricky part was figuring out the right arrows becasue i forgot to include the first character
+skipping it everytime and i couldn't figure out why. Other than that pretty simple solutionusing a while loop within the for loop
+to keep track of the length of the arrow just like i figured beforehand. This was the only easy quesiton though so i have to 
+try harder for the next one.
+
+
+StrangeComputer - 
+Initial Thoughts:
+This question is intriguing to me becuase its an interesting quesiton and i just finished a exam on bits. I think the answer is
+pretty straightfoward where i examine the binary from left to right and flipping it accoardingly so since it starts with all 0
+the first 1 i see increment the counter and then flip when it reaches a 0 and continue until the end of the string. Im not sure
+how to implement the flip, im thinking a for loop using a boolean depending on whether its 0 or 1.
+
+Reflection:
+
