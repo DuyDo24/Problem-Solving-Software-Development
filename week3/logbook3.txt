@@ -36,4 +36,17 @@ the first 1 i see increment the counter and then flip when it reaches a 0 and co
 how to implement the flip, im thinking a for loop using a boolean depending on whether its 0 or 1.
 
 Reflection:
+This quesition was quite simple but i still struggled because i forgot that i was given a string and i tried comparing the string
+to a bool which obviously doesnt work. I just needed to compare it with a char and then change the char if it didnt equal and then 
+increment the counter. This question was quite easy so im going to attempt a harder one for my last question.
+
+
+SimpleCompressor - 
+Initial Thoughts;
+This question was very vrey similar to the 2B in the prac exam where numbers/words are compressed and the number before indicateds
+how many times it needs to expand so i want to attempt this question cause i couldnt figure it out in the exam. I know i need to first
+find the innermost bracket which can be found just using a loop to find ']' from left to right. I rememeber my friends said they 
+solved it using recursion breaking down the brackets each time which i will attempt to do because my recursion needs improvement.
+
+Reflection:
 
