@@ -18,6 +18,8 @@ public:
                 for (int i = 0; i < D; i++) {
                     result += inside;
                 }
+            } else {
+                pos++;
             }
         }
         return result;
