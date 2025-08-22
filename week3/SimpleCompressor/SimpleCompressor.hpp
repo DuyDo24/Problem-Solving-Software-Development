@@ -13,14 +13,15 @@ public:
             }
             else if (isdigit(data[pos])){
                 int D = data[pos] - '0';
-                pos += 2;
+                pos++;
+                pos++;
                 string inside = helper(data, pos);
                 pos++;
                 for (int i = 0; i < D; i++){
                     result += inside;
                 }
             }
-            
+
         }
         return result;
     }
