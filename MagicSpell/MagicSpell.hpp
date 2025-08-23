@@ -6,15 +6,15 @@ class MagicSpell{
 public:
     string fixTheSpell(string spell){
         int l = 0;
-        int r = spell.size();
+        int r = spell.size() - 1;
         while (l < r){
-            if (spell[l] == 'A' || spell[l] == 'Z' && spell[r] == 'A' || spell[r] == 'Z'){
+            if ((spell[l] == 'A' || spell[l] == 'Z') && (spell[r] == 'A' || spell[r] == 'Z')){
                 swap(spell[l],spell[r]);
             }
-            if (spell[l] != 'A' || spell[l] != 'Z'){
+            if (spell[l] != 'A' && spell[l] != 'Z'){
                 l++;
             }
-            if (spell[r] != 'A' || spell[r] != 'Z'){
+            if (spell[r] != 'A' && spell[r] != 'Z'){
                 r--;
             }
         }
