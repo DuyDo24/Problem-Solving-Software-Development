@@ -49,4 +49,14 @@ find the innermost bracket which can be found just using a loop to find ']' from
 solved it using recursion breaking down the brackets each time which i will attempt to do because my recursion needs improvement.
 
 Reflection:
+This question was surprisingly easy to understand but hard to implmenet recursion, I finally got it in the end after several attempt
+and because i wasn't sure where i was going wrong. I didnt know how to handle the brackets but just realised i just had to 
+increment the pointers at every step adn the recursion was just for the length of the numbers within the brackets. This question
+gave me a lot more confindence in my ability but still need to work harder so i dont spend too much time like i did in the prac exam.
 
+
+OVERALL REFLECTION:
+These questions are clearly getting harder each week which is good as im forced to adapt and think more logically, i feel like
+i know how to solve them but have trouble implementing them and waste time doing inefficient methods. I need to practice more 
+quesitons each week to get better focusing on the more difficult problems. Arrows and SimpleCompressor were easy to understand and 
+implement whilst simplecompressor and quicksum was very difficult for me. I can tell that im getting better as i train my brain each week.
