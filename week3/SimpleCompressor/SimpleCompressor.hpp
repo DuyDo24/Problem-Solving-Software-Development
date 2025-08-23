@@ -12,14 +12,14 @@ public:
             } else if (isdigit(data[pos])) {
                 int D = data[pos] - '0';
                 pos++; 
-                pos++;
-                string inside = helper(data, pos);
-                pos++; 
-                for (int i = 0; i < D; i++) {
+                string inside = "";
+                while (pos < data.size() && data[pos] != ']'){
+                    inside.push_back(data[pos]);
+                    pos++;
+                }
+                for (int i = 0; i < D; i++){
                     result += inside;
                 }
-            } else {
-                pos++;
             }
         }
         return result;
