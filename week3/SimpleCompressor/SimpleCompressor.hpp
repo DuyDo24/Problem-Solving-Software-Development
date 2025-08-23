@@ -9,14 +9,11 @@ public:
             if (isalpha(data[pos])) {
                 result.push_back(data[pos]);
                 pos++;
-            } else if (isdigit(data[pos])) {
+            } else if (data[pos] == '[') {
+                pos++;
                 int D = data[pos] - '0';
                 pos++; 
-                string inside = "";
-                while (pos < data.size() && data[pos] != ']'){
-                    inside.push_back(data[pos]);
-                    pos++;
-                }
+                string inside = helper(data, pos);
                 for (int i = 0; i < D; i++){
                     result += inside;
                 }
