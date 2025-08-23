@@ -1,0 +1,6 @@
+MagicSpell - 
+Initial Thoughts:
+This question looks quite easy, my idea is to use two pointers starting from both ends and when they both encounter an A or a Z
+i use the swap function so this ensures it doesnt just change from A to Z but also changes in the right position wihtout altering 
+the rest of the string. Now im thinking about it im not sure how to move once one of them hits an A or Z and then move the other
+pointer. im just going to try Initially using a while loop and then incrementing the l and r.
