@@ -14,6 +14,7 @@ public:
                 int D = data[pos] - '0';
                 pos++; 
                 string inside = helper(data, pos);
+                pos++;
                 for (int i = 0; i < D; i++){
                     result += inside;
                 }
