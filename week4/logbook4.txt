@@ -4,3 +4,23 @@ This question looks quite easy, my idea is to use two pointers starting from bot
 i use the swap function so this ensures it doesnt just change from A to Z but also changes in the right position wihtout altering 
 the rest of the string. Now im thinking about it im not sure how to move once one of them hits an A or Z and then move the other
 pointer. im just going to try Initially using a while loop and then incrementing the l and r.
+
+Reflection:
+Yeah as i thought it was quite a simple solution using two pointers, simply checking if the letter matches with an A or Z and then
+if it passes through both if statements, just swap them. Very simple and clean solution, im sure there is a better way like amybe
+storing the letters into a vector but my solution was the easiest for me to implement. Great question to start off.
+
+
+RugSizes - 
+Initial Thoughts:
+This question stumpped me for a bit because i have trouble understading what the questions asking, but i get it now, i jsut have to 
+find the amount of rugs that fit three criteria: width and length have to equal the desired area, width and length cannot be 
+different and even, meaning square even rugs are fine, and not duplicates so 6x9 != 9x6. To fit the first criteria it should be Very
+easy, simply if (width x length == area), second one can be dones with if staments checking if it is even and not equal. And to 
+fit the final one i can simple just loop up until the square root of the area as it would stop checking after due to duplication.
+
+Reflection:
+
+
+
+
