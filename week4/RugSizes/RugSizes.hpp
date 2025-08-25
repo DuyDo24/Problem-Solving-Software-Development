@@ -9,9 +9,10 @@ public:
             for (int j = 0;j < sqrtarea;j++){
                 if (i * j == area ){
                     if (i % 2 == 0 && j % 2 == 0 && i != j){
-                           count++;
+                           continue;
+                    } else {
+                        count++;
                     }
-
                 }
             }
         }
