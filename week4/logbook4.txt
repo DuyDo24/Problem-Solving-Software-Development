@@ -20,6 +20,19 @@ easy, simply if (width x length == area), second one can be dones with if stamen
 fit the final one i can simple just loop up until the square root of the area as it would stop checking after due to duplication.
 
 Reflection:
+It was a very simple and elegant solution with very few lines of code, i followed my inital thoughts exactly and didnt run into
+many problems. If i want to improve i should attempt harder questions that invovle dynamic programming.
+
+
+UnsealTheSafe -
+Initial Thoughts:
+This question involves dynamic programming but im not very confident in how to solve it, i think ill need to use AI or my friedns
+help to understad how to implemnet it. I know you have to create an adjacency vector to store all possible options but im not 
+sure where to go from then. Ill try my best.
+
+Reflection:
+
+
 
 
 
