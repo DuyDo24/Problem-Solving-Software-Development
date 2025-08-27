@@ -26,7 +26,7 @@ public:
         this->dread = dread;
         this->price = price;
         this->n = dread.size();
-        int best = 1e9;
+        best = 1e9;
 
         helper(0,0,0);
         return best;
