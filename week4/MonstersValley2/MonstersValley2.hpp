@@ -5,11 +5,11 @@ using namespace std;
 class MonstersValley2{
 public:
     int n;
-    vector<long long> dread;
+    vector<int> dread;
     vector<int> price;
     int best;
 
-    void helper(int i, long long currentdread, int gold){
+    void helper(int i, int currentdread, int gold){
         if (i == n){
             best = min(best, gold);
             return;
@@ -22,7 +22,7 @@ public:
         }
     }
 
-    int minimumPrice(vector<long long> dread, vector<int> price){
+    int minimumPrice(vector<int> dread, vector<int> price){
         this->dread = dread;
         this->price = price;
         this->n = dread.size();
