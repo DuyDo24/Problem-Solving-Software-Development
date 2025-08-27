@@ -47,7 +47,18 @@ minimum gold spent, and its inputs would be the index, current dread and gold. I
 every possibility.
 
 Reflection:
+This question required a bit more thinking but easier than unseal the safe becasue backtracking is something im a bit mroe familiar
+with. The solution was basically everything i described in the initial thoughts where it goes thoruhg each case due to the low 
+constraints and simply returns the minimum. Although it took a lot of sibmission attempts i finally got it in the end due to some 
+stupid errors where i was reinitialising the varible and didn't account for large constraint of dread. 
 
+
+OVERALL REFLECTION:
+These questions were quite intruiging, especially unseal the safe because i have never felt so clueless before, the first two questions
+were quite simple to solve, simple string manipulation and math if statements. The dyanmic progrmaming question however shows 
+how behind i am as a student because im almost certain a dp question will appear on the prac exam. I need to practice it more 
+if i want to continue to improve. The last quesiton was simple backtracking recursion which i have the grasp on now. I just have issues
+with implementing dp even though i understand the fundamental behihnd it.
 
 
 
