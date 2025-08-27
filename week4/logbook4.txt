@@ -31,8 +31,22 @@ help to understad how to implemnet it. I know you have to create an adjacency ve
 sure where to go from then. Ill try my best.
 
 Reflection:
+I had to get help from AI to help explain and solve this dp becasue im very new to this and i dont understand how it works. first
+you had to build a adjacency table, then create a dp table with N+1 rows and 10 columns which are intialised to 0. First you have to 
+build a base case where if N would equal 1. Then you have to do nested for loops so for each leangth and each digit, you have to 
+compute the number of sequences ending at d. To end at d, the prevoius digit must be one of adj[d], so we loop and add up all ways
+from dp[len-1][prev]. After we filled the table we just count the sequences ending with each digit.
 
 
+MonstersValley2 -
+Initial Thoughts - 
+This question looks very interesting, i can tell u should be using dynamic progrmaming or backtracking becasue the constraints 
+are only up to 20. I want to try and implement dp but im still very new, by backtrakcing i can brute force my way to the solution
+and its a lot easier for me to visualise. I going to use a helper function to first establish a base case that keeps track of the 
+minimum gold spent, and its inputs would be the index, current dread and gold. I can then simply use recursion to go through
+every possibility.
+
+Reflection:
 
 
 
