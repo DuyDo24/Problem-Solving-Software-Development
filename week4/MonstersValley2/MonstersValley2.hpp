@@ -9,7 +9,7 @@ public:
     vector<int> price;
     int best;
 
-    void helper(int i, int currentdread, int gold){
+    void helper(int i, long long currentdread, int gold){
         if (i == n){
             best = min(best, gold);
             return;
