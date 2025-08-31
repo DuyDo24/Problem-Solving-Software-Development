@@ -6,7 +6,7 @@ public:
         int low;
         if (min < 0) {
             low = min/factor;
-            if (min % factor == 0 ){low--;}
+            if (min % factor != 0 ){low--;}
         } else {
             low = (min + (factor-1))/factor;
         }
