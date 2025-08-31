@@ -1,0 +1,8 @@
+RGBStreet - 
+Initial Thoughts:
+I want to start off with the bonus question this time just to test my whearebout in terms of problem solving, the question looks
+simple but i can tell its deceiving. I want to try backtracking because its only up to 20 and i can brute force the solution but
+i want to maybe find a more elegant solution. Im going to try and implement dynamic progrmaming as thats the main area i lack in.
+I'm going to use AI to help guide me trhough the logic but im going to write everything myself to the best of my ability. 
+
+Reflection:
