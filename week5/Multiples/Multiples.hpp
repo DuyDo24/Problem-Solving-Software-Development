@@ -1,14 +1,15 @@
 class Multiples {
 public:
     int number(int min, int max, int factor) {
-        int high = max / factor;
-        int low;
-        if (min > 0) {
-            low = (min - 1) / factor;
+        int firstMultiple;
+        if (min >= 0) {
+            firstMultiple = ((min + factor - 1) / factor) * factor;
         } else {
-            low = (min - 1) / factor;
-            if ((min - 1) % factor != 0) low--;
+            firstMultiple = (min / factor) * factor;
         }
-        return high - low;
+        
+        int lastMultiple = (max / factor) * factor;
+        
+        return (lastMultiple - firstMultiple) / factor + 1;
     }
 };
