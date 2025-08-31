@@ -1,12 +1,10 @@
+#include <cmath>
+using namespace std;
 class Multiples {
 public:
-    int number(int min, int max, int factor) {
-        int start = min;
-        if (min % factor != 0) {
-            start += factor - (min % factor);
-        }
-        int end = max - (max % factor);
-        if (start > max) return 0;
-        return (end - start) / factor + 1;
+   int number(int min, int max, int factor) {
+        int high = max / factor;  
+        int low = (int)floor((double)(min - 1) / factor);
+        return high - low;
     }
 };
