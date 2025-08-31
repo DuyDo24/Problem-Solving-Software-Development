@@ -6,3 +6,19 @@ i want to maybe find a more elegant solution. Im going to try and implement dyna
 I'm going to use AI to help guide me trhough the logic but im going to write everything myself to the best of my ability. 
 
 Reflection:
+This question was actually not as hard as i thought it would be, probably because i had practice from the other week on dp problems,
+although this solution does not require any recursion. I first had to create a cost and dp table and initialise the cost table
+from the strings of house using isstream. Then i created a base case assuming the first house was each colour and stored it into 
+the dp table. THen i uszed a for loop to iterate over each house only grabbing the mininmum between the house before with a 
+different colour and add it to the runnning total cost returning the minmimum spent. This question was very clean and im happy iwas
+able ot oslve it with minimal help.
+
+
+Multiples -
+Initial Thoughts:
+This question look very very easy but im concerned about the constriants and i can easily seet a for loop starting from the given
+min and max, and if its divisable by the factor i can increment the count. Im trying to think of another method that could be more
+optimal that involves proper arithmatic. From looking at the note that the quesiton gives us, im thinking of another method 
+where instead of checking if a number is divisable by the factor, use simple just divide the min and max by the factor and then 
+return the amount of numbers left between them. FOr example 0 < k * 3 < 14 , u can do this instread  0/3 < k < 14/3 which gives
+us 0 < k < 2 and then u would add one because its inclusive so the 0 would be added.
