@@ -19,9 +19,10 @@ public:
             for (int j = 0; j < number;j++){
                 result += text[i];
             }
+            i++;
         }
         if (result.size() > 50){
-            return "TOO LONG"
+            return "TOO LONG";
         } else {
             return result;
         }
