@@ -40,3 +40,19 @@ I want to try and implement this with vectors as the constraints are small and i
 votes given.
 
 Reflection:
+Luckly for me i got it in my first submit, it took a little bit of time to figure out how i was going to apprach but once i knew
+the logic, i could code it right away. i first used a for loop to initialise both vectors giving me the max, i then iterated through
+and if the votesGiven[i] > result then that would be the new result giving me the max vote in the family. if it wasn't the max 
+then i had to check if it was equal, if it was i had to chek how many votes with given by each person, if it the same i had to again
+check the smaller index which was easy. Good problem.
+
+RunLengthEncoding - 
+Initial Thoughts:
+This question is very similar to the decompressor question where theres a number before a letter and you have to print it out
+that many times. Except this time you can do it from left to right rather than starting from inside the brackets, my idea is to 
+go through the stirng with two pointers, first i goes through until it hits a letter, then checks with the other pointer which 
+remains at the start and gets the number, then simply loop that many times but im trying to think of a way to get the number 
+because it could be two digits or one. An idea i have is to subtract the length from the two points but i feel like there is a better
+method.
+
+Reflection:
