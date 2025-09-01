@@ -12,6 +12,9 @@ public:
             while (i < text.size() && isdigit(text[i])) {
                 number = number * 10 + (text[i] - '0');
                 i++;
+                if (number > 50){
+                    return "TOO LONG";
+                }
             }
             if (number == 0) {
                 number = 1;
