@@ -2,7 +2,7 @@
 #include <algorithm>
 using namespace std;
 
-class Barbacue{
+class Barbecue{
 public:
     int eliminate(int n, vector<int> voter, vector<int> excluded){
         vector<int> votesAginst(n, 0);
