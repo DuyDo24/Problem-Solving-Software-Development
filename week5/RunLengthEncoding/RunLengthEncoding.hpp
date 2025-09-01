@@ -20,11 +20,10 @@ public:
                 result += text[i];
             }
             i++;
-        }
-        if (result.size() > 50){
+            if (result.size() > 50){
             return "TOO LONG";
-        } else {
-            return result;
+            } 
         }
+        return result;
     }
 };
