@@ -46,6 +46,7 @@ and if the votesGiven[i] > result then that would be the new result giving me th
 then i had to check if it was equal, if it was i had to chek how many votes with given by each person, if it the same i had to again
 check the smaller index which was easy. Good problem.
 
+
 RunLengthEncoding - 
 Initial Thoughts:
 This question is very similar to the decompressor question where theres a number before a letter and you have to print it out
@@ -56,3 +57,16 @@ because it could be two digits or one. An idea i have is to subtract the length 
 method.
 
 Reflection:
+This question took some time but i got it in the end, the only trouble i ran into was checking if it was too long but that was an
+easy fix by add two if statements so the int number wont get too large which makes it unpredictable and crashes. But overall it 
+was a pretty easy questino i just used a while loop in the edn to check if its a number and then just mutiply it by 10 and add the digits.
+Other than the that u just append the letter each time in the while loop which was quite easy.
+
+
+OVERALL REFLECTION - 
+RGBStreetwas a good dp question that qurprisingly didint require any recursion becasue the constraints were quite samll but a good
+question nonetheless. Multiples surprisly was the most fustrating even though its an easy question because i coulndt figure ou tthe 
+negative numbers. i feel like my solution for barbacue was the most elegant but still challenging. RunLengthEncoding was quite easy
+just gotta figure out edge cases. Overall this week of questions were very nice, the more i do them the mroe i get better and
+i can definetly tell i've improved since week 1. Im finding the quesitons more enjoyable each time rather than fustrating because 
+i know im getting better and thats really fun for me to see.
