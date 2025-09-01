@@ -22,3 +22,21 @@ optimal that involves proper arithmatic. From looking at the note that the quesi
 where instead of checking if a number is divisable by the factor, use simple just divide the min and max by the factor and then 
 return the amount of numbers left between them. FOr example 0 < k * 3 < 14 , u can do this instread  0/3 < k < 14/3 which gives
 us 0 < k < 2 and then u would add one because its inclusive so the 0 would be added.
+
+Reflection:
+I did not think i would have to go through so much trouble for this simple question, i struggled with dealing with negative numbers
+but had the right idea. I submitted it several times trying different methods because dividing with negative numbers truncates it
+towards 0, so i had to use the floor function to truncate it towards negative infinity. I couldnt figure out what was going wrong for
+a bit because all the failing test cases were off by 1 number and it was when the max was negative. I finally got it in the end
+but next time i should do proper calculations before rather then continuously change one thing and keep submitting.
+
+
+Barbacue - 
+Initial Thoughts:
+This question again took some time for me to understand but i get the question and it seems quite easy to implement, my idea is 
+first i figure out who got voted the most and if its one person then simply return that index, if its a tie then i have to get 
+the total number of times the people who tied got voted and return the highest voter. If its equal i just return the smaller index.
+I want to try and implement this with vectors as the constraints are small and i can create two vectors with the votesagainst and 
+votes given.
+
+Reflection:
