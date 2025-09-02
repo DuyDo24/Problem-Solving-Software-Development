@@ -1,0 +1,7 @@
+NiceOrUgly - 
+Initial Thoughts:
+This question i can tell is another dp/dfs quesiton where i go through the string first checking if it has 3 vowels in a row or 5 consanants
+in a row, then if its a ? i call itself checking both cases where its a vowel or a consanant. Since the constraints are only 50 
+a DFS or dp appraoch would work, ill try need to make a dfs contains the current index, number of current consecutive vowels 
+and consanant as well as if a string found is nice or ugly. At the end of the string we just need to check if the boolean value of nice and ugly 
+are true or not, i fboth true return 42.
