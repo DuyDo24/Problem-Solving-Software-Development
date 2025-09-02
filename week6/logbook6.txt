@@ -5,3 +5,19 @@ in a row, then if its a ? i call itself checking both cases where its a vowel or
 a DFS or dp appraoch would work, ill try need to make a dfs contains the current index, number of current consecutive vowels 
 and consanant as well as if a string found is nice or ugly. At the end of the string we just need to check if the boolean value of nice and ugly 
 are true or not, i fboth true return 42.
+
+Reflection:
+This question took some time becasue i realised that brute force dfs wasnt going to work due tp the large constraints assuming 50 
+"?". i didnt take that into account, so i had to add memoisation to optimise the code ensurign it doesnt recalculate calculations
+that have already been done. I should of initially used a dp approach because although its quite similar its easier to understand
+whats going on. The only hard part about this question was implementing the memoisation becasue it had to contain multiple variabels.
+
+
+BlackAndWhiteSolitaire - 
+Initial Thoughts:
+This question looks quite easy proabbly becasue i have a cheese method of solving it, becasue there are low constraints and only
+two options. i figure out the size and build out a repeating pattern of that size one that starts with white and one with black,
+then i simply compare it with the origina string keeping count of how many times dies it differ and then just return the minimum 
+difference.
+
+Reflection:
