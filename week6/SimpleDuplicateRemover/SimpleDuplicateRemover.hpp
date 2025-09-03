@@ -1,21 +1,22 @@
 #include <vector>
-#include <algorithm>
 #include <unordered_set>
+#include <algorithm>
 using namespace std;
 
-class SimpleDuplicateRemover{
+class SimpleDuplicateRemover {
 public:
-    vector<int> process(vector<int> sequence){
-        unordered_set <int> set;
-        int n = sequence.size();
-        for (int i = n; i > 0; i--){
-            if (set.find(sequence[i]) == set.end()){
-                sequence.erase(sequence.begin() + i);
-            } else {
-                set.insert(sequence[i]);
+    vector<int> process(vector<int> sequence) {
+        unordered_set<int> seen;
+        vector<int> result;
+
+        for (int i = (int)sequence.size() - 1; i >= 0; i--) {
+            if (seen.find(sequence[i]) == seen.end()) {
+                seen.insert(sequence[i]);
+                result.push_back(sequence[i]);
             }
         }
-        reverse(sequence.begin(), sequence.end());
-        return sequence;
+
+        reverse(result.begin(), result.end());
+        return result;
     }
 };
