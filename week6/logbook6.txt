@@ -21,3 +21,15 @@ then i simply compare it with the origina string keeping count of how many times
 difference.
 
 Reflection:
+As i expected the question was quite easy to complete however after checking with AI i definetly coulve made my code a lot more consise,
+i was creating strings B and W however if n were very large in this case, it would take a lot of exrta memory. Instead i shoulve 
+just created two scenarios checking if it was an W or B rather than creating unnessary strings that waste memory. I always try
+to opt for the most optimal route so ill keep that in the back of my mind as i progress further.
+
+
+SimpleDuplicateRemover - 
+Initial Thoughts:
+This question looks quite simple, my initial idea is to create a vector then first loop through starting from the right and if 
+it hasn't been found, simply add it to the vector. If it is in the vector then just skip it, and continue the iteration. Then 
+just return the vector but reversed. Another idea i just got is to not create another vector and just work on the original vector
+rather than creaging a new one like i did in the previous question. im going to use an set to keep track of values found.
