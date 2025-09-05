@@ -12,7 +12,7 @@ public:
         int complex = 0;
         int comput = 0;
 
-        while (complex < complexity.size()){
+        while (complex < complexity.size() && comput < computers.size()){
             if (computers[comput] >= complexity[complex]){
                 count++;
                 comput++;
