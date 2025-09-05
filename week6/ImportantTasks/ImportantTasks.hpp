@@ -9,9 +9,16 @@ public:
         sort(complexity.begin(), complexity.end());
 
         int count = 0;
-        for ( int i = 0;i < computers.size(); i++){
-            if (computers[i] >= complexity[i]){
+        int complex = 0;
+        int comput = 0;
+
+        while (comput > computers.size()){
+            if (computers[comput] >= complexity[complex]){
                 count++;
+                comput++;
+                complex++;
+            } else {
+                complex++;
             }
         }
         return count;
