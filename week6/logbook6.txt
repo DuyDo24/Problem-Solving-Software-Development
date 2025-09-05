@@ -33,3 +33,18 @@ This question looks quite simple, my initial idea is to create a vector then fir
 it hasn't been found, simply add it to the vector. If it is in the vector then just skip it, and continue the iteration. Then 
 just return the vector but reversed. Another idea i just got is to not create another vector and just work on the original vector
 rather than creaging a new one like i did in the previous question. im going to use an set to keep track of values found.
+
+Reflection:
+I realised it wasnt possible wihtout creating a new vector becasue it returns one and doesnt give the address just the copy so 
+i had to create a vector and a set, if the number wasnt found in the set add it to the set and vector, otherwise just move on. 
+At the end you simply reverse it so it keeps the rightmost logic. This question was quite easy and i feel like i get the hang of
+most of these two star questions.
+
+
+Important task - 
+Initial Thoughts:
+This question is from week 4 but i never had the chance to look at all the question till now, To approach this problem my first 
+idea is to sort both complexity and computers and simply compared the max indexes. Simply loop around the computer until there are no
+more computers. I dont see why this simple solution wont work.
+
+Reflection:
