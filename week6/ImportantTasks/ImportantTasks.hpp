@@ -10,7 +10,7 @@ public:
 
         int count = 0;
         for ( int i = 0;i < computers.size(); i++){
-            if (computers[i] > complexity[i]){
+            if (computers[i] >= complexity[i]){
                 count++;
             }
         }
