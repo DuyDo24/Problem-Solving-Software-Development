@@ -48,3 +48,15 @@ idea is to sort both complexity and computers and simply compared the max indexe
 more computers. I dont see why this simple solution wont work.
 
 Reflection:
+This question took longer than it shoulve becasue i forgot to sort it in reversed order making the outputs wrong every time and
+couldn't figur eout why. Next time i should think carefully about each step rather than waste time submitting code casue of one
+small error. Other than that the uestion was quite easy to solve compared toall the dyanmic quesitons.
+
+
+OVERALL REFLECTION:
+This week question were quite easy but thats becasue i chose to do them rather than try the really hard ones, i think for me it 
+imperative that i do something in my skill level and just slowly progress becasue whenever i am faced with a hard quiestion 
+that i can't figure it out, i just quit in general becasue i get too fustrated and coding isn't enjoyabnle anymore. A new method 
+ive found for myslef is to simply just do the questions i know im able ot solve and get really good at them for the foundation because
+i can definetly tell ive imporved a lot since week1. Right now im sitll learning dp but once i get the hang of it ill be 
+unstoppable.
