@@ -1,0 +1,9 @@
+MinimalDifference - 
+Initial Thoughts:
+This question tooke me a few minutes to understand but i get it now, its asking me to find a number between int A and int B to have the
+smaller gap possible. My first thought is to first use a helper function to calculate the digit sum of any given number, now to 
+do that my idea is to loop throuugh the number. I have two ideas, i could do some  proper math using modulo to get the digits of the 
+number or i could just convert it into a string and loop trhought that easily.Im going to go with the string strategy because its
+ a lot easier, now the only step is to figure out the closest number to the digit sum of C, my idea is to have a variable called 
+close and loop from A and B calling the helper funciton each time and if its equal then retunr immedialtely else if it loops to
+the end then return the variblae with the smallest close.
