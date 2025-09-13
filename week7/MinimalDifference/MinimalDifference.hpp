@@ -1,20 +1,28 @@
 #include <string>
+#include <cmath>
+#include <climits>
 using namespace std;
 
 class MinimalDifference{
 public:
     int findNumber(int A, int B, int C){
         int csum = helper(C);
-        int closest = 0;
-        int close = 10e9;
+        int closest = A;
+        int close = 1e9;
 
-        for (int i = A; i < B; i++){
+        for (int i = A; i <= B; i++){
             int temp = helper(i);
+            int diff = abs(temp - csum);
+
             if (temp == csum){
                 return i;
             } 
+            if (diff < close){
+                close = diff;
+                closest = i;
+            }
         }
-    return A;
+    return closest;
     }
 private:
     int helper(int n){
