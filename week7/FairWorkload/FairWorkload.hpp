@@ -6,7 +6,7 @@ using namespace std;
 class FairWorkload{
 public:
     int getMostWork(vector<int> folders, int workers){
-        int sum;
+        int sum = 0;
         for (int x : folders) sum += x;
 
         auto maxvalue = max_element(folders.begin(), folders.end());
@@ -28,13 +28,14 @@ public:
         int current = 0;
 
         for (int i = 0; i < a.size();i++){
-            current += a[i];
+            if (current + a[i] <= mid){
+                current += a[i];
+            } else{
+                current = a[i];
+                used++;
+            }
             if (used > b){
                 return false;
-            }
-            if (current > mid){
-                current = 0;
-                used++;
             }
         }
     return true;
