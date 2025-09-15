@@ -7,3 +7,19 @@ number or i could just convert it into a string and loop trhought that easily.Im
  a lot easier, now the only step is to figure out the closest number to the digit sum of C, my idea is to have a variable called 
 close and loop from A and B calling the helper funciton each time and if its equal then retunr immedialtely else if it loops to
 the end then return the variblae with the smallest close.
+
+Reflection:
+The question was very starightfoward in implementing the digit sum and looping, the only obstacle i faced was figuring out the 
+closest number which i ended up doing using the absolute value difference and keeping track of it in a seperate variable. Other than 
+that it was a pretty simple solution following the rest of my ideas in the initial thoughts above.
+
+
+FairWorkload -
+Initial Thoughts:
+The question took a while to read and understand but i get it, you have to split the work as evenly as possible with t ehnumber of 
+workers given. My first idea is becasue the constraints to the folers only go from 2-15 you can maybebrute force it so it partitions
+every time a worker is given. So my idea is lets assume the worjer is one and the case is 10 -100, you  would try i partition
+between each number recording the max workload and replacing it each time it becomes less and less. Eventually returning it at 
+the end. The only obstacle i see is that i think it would time out because it suboptimal.
+
+
