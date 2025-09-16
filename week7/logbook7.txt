@@ -22,4 +22,20 @@ every time a worker is given. So my idea is lets assume the worjer is one and th
 between each number recording the max workload and replacing it each time it becomes less and less. Eventually returning it at 
 the end. The only obstacle i see is that i think it would time out because it suboptimal.
 
+Reflection:
+This question felt really good to solve,i needed some help at the end becasue i couldnt figure out what was going wrong but it
+was jsut a subtle bug i had to fix. My solution first figure out the max value in the vector and the total sum of all values as 
+the answer would be in between those regardless of workers. Then you choose a value that you can guess to see if the workers are
+able to fit into that amount of folders. So you would naturally choose the mid point and check using ahelper function to see if it'll 
+go over or not. If it does not go over than adjust the mid point to be between the max value in the vector and the mid point, it 
+it does go over than the max value becomes the mid point. Continuing this pattern shrinks the value it can be every time which is 
+an optimal O(n) solution. This is basically binary search mixed with greedy to check feasibility.
 
+
+VeryInterestingMovie - 
+Initial Thoughts:
+This question was a bit wordy but i get it in the end, to be honest this looks like a very similar question to the lemon one in 
+last year practice B1, becasue all you have to do is figure out the best configuration of seats in each row and add them up all
+together. I dont understand why its worded so weirdly because it seems like a simple dp problem. My idea is to loop thorugh each
+array and create a dp table where if the seat is avalible then give the option to either take it or dont take it and take the one before
+it.
