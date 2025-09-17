@@ -6,21 +6,25 @@ using namespace std;
 class PrefixFreeSets {
 public:
     int maxElements(vector<string> words) {
-        sort(words.begin(), words.end(), [](const string &a, const string &b){
-            return a.size() < b.size();
-        });
+        sort(words.begin(), words.end());
 
-        vector<string> chosen;
-        for (string &w : words) {
-            bool bad = false;
-            for (string &c : chosen) {
-                if (w.size() >= c.size() && w.compare(0, c.size(), c) == 0) {
-                    bad = true;
-                    break;
-                }
+        int n = words.size();
+        vector<bool> used(n, true);
+
+        for (int i = 0; i < n - 1; i++) {
+            if (isPrefix(words[i], words[i+1])) {
+                used[i] = false; 
             }
-            if (!bad) chosen.push_back(w);
         }
-        return chosen.size();
+
+        int count = 0;
+        for (bool u : used) if (u) count++;
+        return count;
+    }
+
+private:
+    bool isPrefix(const string &a, const string &b) {
+        if (a.size() > b.size()) return false;
+        return b.compare(0, a.size(), a) == 0;
     }
 };
