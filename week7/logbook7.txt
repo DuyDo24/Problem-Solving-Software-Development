@@ -39,3 +39,20 @@ last year practice B1, becasue all you have to do is figure out the best configu
 together. I dont understand why its worded so weirdly because it seems like a simple dp problem. My idea is to loop thorugh each
 array and create a dp table where if the seat is avalible then give the option to either take it or dont take it and take the one before
 it.
+
+Reflection:
+Surprisly i go tit right on my first attempt, this was the first dp problem that i managed to solve in one go and im really proud
+cause i know i woulndt of been able to do this a few weeks ago. My approach was very similar to the one in the practise question
+,the only difference was i firs to get each individial row out from the string, i simply did that by using a helper funciton where
+i passed in all thw rows and for each row i created a dp table where i compared where or not each string was a Y or N and simply 
+plus one and pull out the max for each string.
+
+
+PrefixFreeSets -
+Initital Thoughts:
+This question looks difficult at first but i realise you dont have to implment a trie as im assuming thats what the quesitno is asking.
+My first idea is to sort the vector by length, then go thoruhg each word and if its a prefix of a work in the set, if yes then skip
+it otherwise add it too the set. Then you simply return the set as its filled with the max amount of subset possible, this should
+work because we alwasy want the shorter prefix because larger ones just allow more possibilities.
+
+Reflection:
