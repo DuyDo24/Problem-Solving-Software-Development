@@ -56,3 +56,17 @@ it otherwise add it too the set. Then you simply return the set as its filled wi
 work because we alwasy want the shorter prefix because larger ones just allow more possibilities.
 
 Reflection:
+It worked but i need help as i realised when you sort by length for example in the beginning example, "hello", "hi", "h", "run", "rerun", "running" 
+becasue we processs h first and since its a prefix of hi and hello, its better to keep hi and hello rather than discarding htme both
+and keeping h. So i sorted normally alphabetically and checked adjacent words for prefix relationships. Other than that it follows 
+the same logic as described in my initial thoughts.
+
+
+OVERALL REFLECTION
+I can definetly tell im improving each week and its really satisfying to see that im able to work through each question with proper
+logic beforehand and trying to implment it rather than just coding the question without thinking trhough each step first. Each question
+was quite difficult and covered a wide range of coding techniques which was nice too see.Minimal Difference was a very nice problem
+that took some time to code but the logic is clean. Fair work load required binary search to figure out the optimal partition, it
+was my first time coding thta so that felt really nice. The movie on was quite similar to another problem i solved so i already knew the 
+logic which was easy. PrefixFreeSets was the hardest as im not very familiar with tries and i can tell my solution is not optimal 
+due to the long gradescope timer to grade my score. Overall this week was very insightful and im excited to keep going.
