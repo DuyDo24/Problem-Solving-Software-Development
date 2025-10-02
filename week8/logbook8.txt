@@ -1,0 +1,6 @@
+TaliluluCoffee - 
+Initial Thoughts:
+This question took a while for me to understand but looks fundamentally easy, since the order can change, i feel like i can simply
+sort the tips from largest to smallest and simply just serve them in that order. I really dont understand why this problem has such
+a high difficulty rating, probably because they want us to solve it without sorting. I can just rally up the total using tips[i] - i and
+if its negative just count it as 0.
