@@ -11,7 +11,7 @@ public:
             int x = c[0] - '0';
             int y = c[2] - '0';
             if (x == current) current = y;
-            if (y == current) current = x;
+            else if (y == current) current = x;
         }
         return current;
     }
