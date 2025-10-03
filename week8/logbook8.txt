@@ -4,3 +4,14 @@ This question took a while for me to understand but looks fundamentally easy, si
 sort the tips from largest to smallest and simply just serve them in that order. I really dont understand why this problem has such
 a high difficulty rating, probably because they want us to solve it without sorting. I can just rally up the total using tips[i] - i and
 if its negative just count it as 0.
+
+Reflection:
+As expected i solved it in one go following my intial thought strategy, this solution is quite efficient as well with a time complexity
+of n log n due to sorting the array first. This question didnt require any local testing or error as it was very straightfoward.
+
+
+Thimbles - 
+Initial Thoughts:
+Again im attempting the easist problem given as my flight just got canceled and now im really sad so an easy question will cheer me up,
+I already see a solution where i frist set the current as 1 and then since the string is alwasy the same length, ican check swaps[0]
+and swaps[3] for the integers and if its equal to the current then swap it for the other one. This seems like a very simple solution Again.
