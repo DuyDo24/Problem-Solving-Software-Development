@@ -15,3 +15,17 @@ Initial Thoughts:
 Again im attempting the easist problem given as my flight just got canceled and now im really sad so an easy question will cheer me up,
 I already see a solution where i frist set the current as 1 and then since the string is alwasy the same length, ican check swaps[0]
 and swaps[3] for the integers and if its equal to the current then swap it for the other one. This seems like a very simple solution Again.
+
+Reflection:
+I ran into a small issue where i shoulve used an else if statement rather than an if statement but other than that it was pretty simple
+to solve following my inital thought logic. Its a O(1) solution and quite short, im now gonna attempt the week8 bonus problem.
+
+
+CorporationSalary - 
+Initial Thoughts:
+This quesitno was a lot to take in but i get the fundamentals of it, bascially its asking whats the total salary of all employees 
+given a matrix in string determining whether or not that employer is a manager or not. And the salary of an employer with subordinates
+is the total salary of their sum of their direct subordinates. If an employee has no subordinates then their salary is simply 1. my
+first thought is to use a dfs search with memoisation where i loop through the matrix and determine employees with nno subordinates
+mkaing theihr salary equal to 1 and store it. Then i conintue the recursion until all salaries are accounted for.
+
