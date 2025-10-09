@@ -29,3 +29,18 @@ is the total salary of their sum of their direct subordinates. If an employee ha
 first thought is to use a dfs search with memoisation where i loop through the matrix and determine employees with nno subordinates
 mkaing theihr salary equal to 1 and store it. Then i conintue the recursion until all salaries are accounted for.
 
+Reflection:
+This question was quite hard as expected and i needed assistance from my peers as im quite unfamiliar dealing the matrixes, in the 
+exam i struggled with the matrix question and had to study afterwards to try and understand how to deal with them. Simply you just 
+loop through the relations twice and if the i,j is equal to Y than call itself but providing that it does have a subordinate, and at
+the end if it doesnt have a subordinate than simply its equal to 1 and else store it into memo if it already wasnt there already. This
+question was decieving at first but after going through it, it wasn't that bad i just had a lot of trouble figuring out how to using 
+memoisation to make it more efficinet.
+
+
+RockStar - 
+Initial Thoughts:
+This question stands out to me as it looks quite decieving but i kept thinking about it and you kist have to address every case possible.
+First case is if there are no fast starting songs, then you start with all the ss and add 1 if there is any sf. Now if there is a 
+fast starting song then you start with all the ff songs, then use one fs and spam all the ss, and them finish off by alternating between
+fs and sf until one o fthem runs out. 
