@@ -44,3 +44,17 @@ This question stands out to me as it looks quite decieving but i kept thinking a
 First case is if there are no fast starting songs, then you start with all the ss and add 1 if there is any sf. Now if there is a 
 fast starting song then you start with all the ff songs, then use one fs and spam all the ss, and them finish off by alternating between
 fs and sf until one o fthem runs out. 
+
+Reflection:
+This question required a lot of bad trial and error becasue i coulnd tfigure out what went wrong with my initial code, in the end it 
+was because i didnt have edge cases where i needed to add one depending on whether there were more sf or fs. Other than that i followed
+the same logic mentioned in the initial thoughts. It was actually quite an easy one but i shouldve thoguht about it more deeply 
+considering every edge case.
+
+
+OVERALL REFLECTION
+Each question attempted felt easier than the difficultyl provided besides the bonus question of course, i can tell im getting better
+because im able to walk myself through each question without giving up and looking for answers straight away. Im able to think more
+logically having a proper approach to each question with a general idea in mind. The bonus question is the only one that was a challenge
+for me but ive done dfs multiple times before so i like how it relays into that. To conclude my progress since week 1 has been crazy
+and i hope to take this logic mindset into the future for my leetcode interviews:).
