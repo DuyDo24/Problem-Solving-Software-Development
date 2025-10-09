@@ -22,6 +22,9 @@ public:
                 total += ss;
             }
         }
+        if (sf > fs) {            
+            total++;
+        }
         return total;
     }
 };
