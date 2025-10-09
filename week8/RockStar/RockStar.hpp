@@ -16,7 +16,6 @@ public:
             total++;
             total += ss;
             if (sf != 0){
-                fs--;
                 total += 2 * min(sf,fs);
             }
         }
