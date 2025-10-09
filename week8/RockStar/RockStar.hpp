@@ -1,23 +1,20 @@
 #include <algorithm>
 using namespace std;
 
-class RockStar{
+class RockStar {
 public:
-    int getNumSongs(int ff, int fs, int sf, int ss){
-        int total = 0;
-        if (ff == 0 && fs == 0){
-            if (sf >= 1){
-                return ss + 1;
-            } 
-            return ss;
+    int getNumSongs(int ff, int fs, int sf, int ss) {
+        if (ff + fs == 0) {
+            return ss + (sf > 0 ? 1 : 0);
         }
-        total = ff;
-        if (fs > 0){
-            total += 1;       
-            total += ss;       
-            if (sf > 0) {
-                total += 1;    
-            }
+        int total = ff;
+        if (sf == 0) {
+            if (fs > 0) total += 1 + ss;
+        } else if (fs == 0) {
+            total += 1;
+        } else {
+            total += 2 * min(fs, sf) + ss;
+            if (fs > sf) total += 1;
         }
         return total;
     }
