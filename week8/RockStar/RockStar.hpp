@@ -12,18 +12,12 @@ public:
             return ss;
         }
         total = ff;
-        if (fs != 0){
-            total++;
-            if (sf != 0){         
-                fs--;
-                total += 2 * min(sf, fs);
+        if (fs > 0){
+            total += 1;       
+            total += ss;       
+            if (sf > 0) {
+                total += 1;    
             }
-            if (fs > 0) {          
-                total += ss;
-            }
-        }
-        if (sf > fs) {            
-            total++;
         }
         return total;
     }
