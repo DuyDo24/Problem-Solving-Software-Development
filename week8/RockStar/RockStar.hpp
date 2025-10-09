@@ -11,7 +11,7 @@ public:
         if (sf == 0) {
             if (fs > 0) total += 1 + ss;
         } else if (fs == 0) {
-            total += 1;
+            total += 0; 
         } else {
             total += 2 * min(fs, sf) + ss;
             if (fs > sf) total += 1;
