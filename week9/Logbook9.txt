@@ -1,0 +1,8 @@
+CatGame - 
+Initial Thoughts:
+This is my first graph question and its quite simple to understand, you just want to find the most optimal solution given a vector of
+coordinates able to move left or right. Right of the bat i can see that trying all combinations of left/right moves for all cats 
+woulndt work becasue the constraints are up to 50 making it 2^50 which is too large. Since the order doesnt matter, my initial Thought
+was to sort the coordinates as we know the largest number it can be would be the first coordinate moving left and the last moving right.
+An idea i had is similar to binary search where given an split point, all the coordinates on the left would move right and all the coordinates
+on the right would move left. That way if you go through each split point and compute the minimal range than i feel like that would work.
