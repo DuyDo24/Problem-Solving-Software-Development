@@ -22,3 +22,14 @@ circle into two smaller groups that must also have perfect non-crossing handshak
 multiplying the possibilities on each side of every possible split and adding them all together.
 
 Reflection:
+Lowkey it was a harder problem than anticipated, using dp wasnt hard but figuring out how to calculate every split was a bit mind boggling
+and i required a bit of help from friends explaining it and in the end i got it. The code was quite short but it had the same logic 
+where i go through each possiblity as the a handshake splits the circle into two and calculated the ones that were perfect.
+
+
+ErdosNumber - 
+Initial Thoughts:
+I can tell this question requires a BFS solution where each author is a node in a graph and if multiple authors coauthored a paper
+than there is an edge between them. First i have to build a graph from the given list and run BFS on it storing their erdos number 
+for each author and then return them lexicographically. I've never implemented BFS before so i know im going to need help in solving
+this question. 
