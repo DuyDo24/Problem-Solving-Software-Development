@@ -6,3 +6,19 @@ woulndt work becasue the constraints are up to 50 making it 2^50 which is too la
 was to sort the coordinates as we know the largest number it can be would be the first coordinate moving left and the last moving right.
 An idea i had is similar to binary search where given an split point, all the coordinates on the left would move right and all the coordinates
 on the right would move left. That way if you go through each split point and compute the minimal range than i feel like that would work.
+
+Reflection:
+I solved 60% of the test questions on my first go but i forgot there there are sepcial edge cases where all the cooridnates should go left
+or all go right as the split forces there to be at least one going each way. Other than that obstacle i solved it pretty easily following
+the logic explained above. I can tell that these graph questions are gonna be a lot harder than everything i learned previously.
+
+
+HandsShaking -
+initial Thoughts: 
+This question looks quite simple and just invovles figuring out the arithmatic behind it as your simply given an int and u return 
+an int. I would approach this question by starting from the smaller numbers and building my way up, so obviously 2 would be 2 but 4
+has 3 different arrangments where 2 are perfect.A method i could do is going through each possibility as each handshake divides the 
+circle into two smaller groups that must also have perfect non-crossing handshakes. The total number of perfect shakes is found by 
+multiplying the possibilities on each side of every possible split and adding them all together.
+
+Reflection:
