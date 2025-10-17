@@ -33,3 +33,16 @@ I can tell this question requires a BFS solution where each author is a node in 
 than there is an edge between them. First i have to build a graph from the given list and run BFS on it storing their erdos number 
 for each author and then return them lexicographically. I've never implemented BFS before so i know im going to need help in solving
 this question. 
+
+Reflection:
+No doubt in my mind that this was the hardest question i've ever attempted, i had trouble building the graph becasue there could be 
+more than two authors for one paper and had to make connections between each one because the graph is undirected. And for BFS
+i had to implement a queue to keep track of the next authors to process. This was by far the most difficult part of this question 
+and i definetly need to study on this more. This last part where u return lexicographically was quite weird but straighfoward at 
+the same time. graph problems will definetly be an issue for me in the future exams.
+
+
+CellRemoval -
+This is my first tree question, i had a bit of trouble with them in the past but i feel like i can manage, I know that i first
+have to build the tree which should be alright, i need to then mark the deleted one proabbly using another function and finally 
+count the remaining cells. This all sounds straightfoward but i still will run into trouble implementing it. 
