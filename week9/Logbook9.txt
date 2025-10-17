@@ -46,3 +46,20 @@ CellRemoval -
 This is my first tree question, i had a bit of trouble with them in the past but i feel like i can manage, I know that i first
 have to build the tree which should be alright, i need to then mark the deleted one proabbly using another function and finally 
 count the remaining cells. This all sounds straightfoward but i still will run into trouble implementing it. 
+
+Reflection:
+It wasnt as diffucult as i thought it would be, i could ubuild the adjacency list but i ran into trouble figuring out how to mark 
+the deleted ones but i just made another vector called deleted and used recursion to mark the deleted cells and all their children 
+deleted. Counting the remaning cells was also a bit mind boggling becasue i forgot how to traverse trhough a tree. i had to first assume 
+it was a leaf and if there was a child then make it false and break so it would go to the next node and if it was a leaf than just
+add to count. This question was easy if youre able to break in down into smaller problems and i ran into a bit of difficulty
+but i got it in the end.
+
+
+OVERALL REFLECTION:
+This weeks questions was definetly a step up from last week introducing trees and graph, which im very new to both. But i like the 
+challenge as im continusly improving each week, the cat Game took me the m ost time as i couldn't figure the right logic to solve 
+it, it was \such a simple question but i still had a tuff time figuring it out. Erdos number was by far the most challenging as i had 
+absolutely no clue what to do. I understand it now but took a while for me to code it out. Cell Removal was the most satisfying 
+as i solved it with minimal help but tree are intresting. This week was overall a nice change of pace and sets me up well for
+the last prac exam.
