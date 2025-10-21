@@ -1,0 +1,8 @@
+DifferentStrings - 
+Initial Thoughts:
+This question was weirdly worded but seems quite easy to implement, im assuming the question is asking the potential difference 
+between A and B assuming u can prepend or append words to match the length. Althought that seems tricky,i thought of a solution
+where you dont need to add any words rather just slide the word A against B counting the difference between letters. Since
+we know A will be shorter than B, we first go through every combination where A would slide against B starting at a new index 
+every time and keeping the minimal difference without adding any extra words.
+
