@@ -4,7 +4,7 @@ using namespace std;
 class DifferentStrings{
 public:
     int minimize(string A, string B){
-        int diff = INT_MAX;
+        int diff = 100000;
         int len = B.size() - A.size();
 
         for (int i = 0 ; i <= len; i++ ){
