@@ -10,7 +10,7 @@ public:
         for (int i = 0 ; i <= len; i++ ){
             int count = 0;
             for (int j = 0; j < A.size();j++){
-                 if (A[i] != B[i+j]) count++;
+                 if (A[j] != B[i+j]) count++;
             }
             diff = min(diff,count);
            
