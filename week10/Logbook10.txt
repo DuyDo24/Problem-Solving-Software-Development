@@ -6,3 +6,17 @@ where you dont need to add any words rather just slide the word A against B coun
 we know A will be shorter than B, we first go through every combination where A would slide against B starting at a new index 
 every time and keeping the minimal difference without adding any extra words.
 
+Reflection:
+I got a bit confused with the indexing cause i used a nested for loop but i figured it out in the end, other than that the question
+was quite short and simple but interesting because this qould be like a week 4 question. I have my praxx exam coming up so i need 
+to study for this, i want to attempt harder questions to prepare for this exam.
+
+
+BlockEnemy - 
+Initial Thoughts:
+This weeks Bonus question looks very challenging, after reading it several times i finally understand what the problem is asking us,
+U are first given the number of towns and the a vector of strings indicating the roads bettwen each town and how much effort it 
+takes to destroy that road. Now we want to destroy roads using the least effort so that the occupiedtowns have no connection
+between each other. First thing i noticed was that there was only one road leading to each town meaning its a tree and to solve this
+question u gotta destroy all edges leaving the occupied town disconnected. And to find the most optimal route i gotta most likely
+use dfs on a tree which i already have problems with.
