@@ -1,77 +1,88 @@
 #include <vector>
 #include <string>
 #include <sstream>
-#include <utility>
 #include <algorithm>
-#include <cmath>
+#include <numeric>
 
 using namespace std;
 
-class BlockEnemy {
+struct Road {
+    int u, v, effort;
+};
+
+class DSU {
+private:
+    vector<int> parent;
+    vector<bool> isOccupiedComponent; 
+
 public:
-    int N;
-    vector<vector<pair<int,int>>> adj; 
-    vector<bool> occupied;
+    DSU(int n, const vector<int>& occupiedTowns) {
+        parent.resize(n);
+        iota(parent.begin(), parent.end(), 0); 
+        isOccupiedComponent.resize(n, false);
 
-    const int INF_EFFORT = 1000001; 
-
-    pair<long long,bool> dfs(int u, int parent) {
-        long long current_cost = 0;
-        vector<int> occupied_paths_weights;
-
-        for (const auto& edge : adj[u]) {
-            int v = edge.first;
-            int w = edge.second;
-            if (v == parent) continue;
-
-            auto sub_result = dfs(v, u);
-            current_cost += sub_result.first;
-
-            if (sub_result.second) {
-                occupied_paths_weights.push_back(w);
-            }
-        }
-
-        if (occupied[u]) {
-            occupied_paths_weights.push_back(INF_EFFORT);
-        }
-
-        int k = occupied_paths_weights.size();
-        
-        if (k > 1) {
-            sort(occupied_paths_weights.begin(), occupied_paths_weights.end());
-
-            for (int i = 0; i < k - 1; ++i) {
-                current_cost += occupied_paths_weights[i];
-            }
-            
-            return {current_cost, true};
-
-        } else if (k == 1) {
-            return {current_cost, true};
-
-        } else {
-            return {current_cost, false};
+        for (int town : occupiedTowns) {
+            isOccupiedComponent[town] = true;
         }
     }
 
+    int find(int i) {
+        if (parent[i] == i)
+            return i;
+        return parent[i] = find(parent[i]);
+    }
+
+    bool unite(int u, int v) {
+        int root_u = find(u);
+        int root_v = find(v);
+
+        if (root_u != root_v) {
+            bool status_u = isOccupiedComponent[root_u];
+            bool status_v = isOccupiedComponent[root_v];
+
+            if (status_u && status_v) {
+                return false; 
+            }
+
+            parent[root_v] = root_u; 
+            isOccupiedComponent[root_u] = status_u || status_v;
+            return true; 
+        }
+        return true; 
+    }
+};
+
+class BlockEnemy {
+public:
     int minEffort(int N, vector<string> roads, vector<int> occupiedTowns) {
-        this->N = N;
-        adj.assign(N, {});
-        occupied.assign(N, false);
-
-        for (int town : occupiedTowns) {
-            occupied[town] = true;
+        if (occupiedTowns.size() <= 1) {
+            return 0;
         }
 
-        for (auto &s : roads) {
-            stringstream ss(s);
-            int a, b, e;
-            ss >> a >> b >> e;
-            adj[a].push_back({b, e});
-            adj[b].push_back({a, e});
+        vector<Road> roadList;
+        long long totalEffort = 0;
+
+        for (const string& roadStr : roads) {
+            stringstream ss(roadStr);
+            int u, v, e;
+            ss >> u >> v >> e;
+            roadList.push_back({u, v, e});
+            totalEffort += e;
         }
 
-        return (int)dfs(0, -1).first;
+        sort(roadList.begin(), roadList.end(), [](const Road& a, const Road& b) {
+            return a.effort > b.effort;
+        });
+
+        DSU dsu(N, occupiedTowns);
+        long long keptEffort = 0;
+
+        for (const auto& road : roadList) {
+            if (dsu.unite(road.u, road.v)) {
+                keptEffort += road.effort;
+            }
+        }
+
+        return (int)(totalEffort - keptEffort);
     }
 };
