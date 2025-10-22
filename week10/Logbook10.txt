@@ -20,3 +20,18 @@ takes to destroy that road. Now we want to destroy roads using the least effort 
 between each other. First thing i noticed was that there was only one road leading to each town meaning its a tree and to solve this
 question u gotta destroy all edges leaving the occupied town disconnected. And to find the most optimal route i gotta most likely
 use dfs on a tree which i already have problems with.
+
+Reflection:
+After trial and error for a long time i realised that my dfs doesnt work for all test cases, i end up having to use help from AI telling
+me to use a DSU approach because it simplifies the greedy decision process from a localised recurison to a single global choice.
+Although i understand the solution,this question still confuses me a bit because im not very familiar with dsu and my dfs solution
+was the main one that i understood. Overall this question taught me about other algorithms ii can use in the future.
+
+
+BigBurger - 
+Initial Thoughts:
+This quesiton institively seems quite simple, since we are given the order already in non-decresing order, we have to loop through
+calculating the max wait for each customers and simply return the largest one. I want to first calculate the wait time of the first
+person, then you subtract it from teh wait person next in line. then if the wait is less than 0 than it remain 0 as the max but the 
+current wait time should be reset to 0 rather than staying at the wait from the previous time. IDK if i explained that alright but
+im going to try and code it and see where i go wrong.
