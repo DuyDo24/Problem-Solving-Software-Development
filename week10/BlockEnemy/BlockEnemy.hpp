@@ -5,26 +5,37 @@
 #include <algorithm>
 using namespace std;
 
-class BlockEnemy{
+class BlockEnemy {
 public:
     int N;
     vector<vector<pair<int,int>>> adj;
     vector<bool> occupied;
 
-    pair<int,bool> dfs(int u, int parent) {
+    pair<long long,bool> dfs(int u, int parent) {
         bool hasOccupied = occupied[u];
-        int cost = 0;
+        long long cost = 0;
+        vector<int> occupiedEdges;
 
-        for (auto [v, w] : adj[u]) {
+        for (size_t i = 0; i < adj[u].size(); ++i) {
+            int v = adj[u][i].first;
+            int w = adj[u][i].second;
             if (v == parent) continue;
-            auto [subCost, subOccupied] = dfs(v, u);
-            cost += subCost;
 
-            if (subOccupied && hasOccupied) {
-                cost += w;
-            } else {
-                hasOccupied = hasOccupied || subOccupied;
-            }
+            auto sub = dfs(v, u);
+            cost += sub.first;
+            if (sub.second)
+                occupiedEdges.push_back(w);
+        }
+
+        if (occupied[u]) hasOccupied = true;
+
+        if (occupiedEdges.size() > 1) {
+            sort(occupiedEdges.begin(), occupiedEdges.end());
+            for (size_t i = 0; i + 1 < occupiedEdges.size(); ++i)
+                cost += occupiedEdges[i];
+            hasOccupied = true;
+        } else if (occupiedEdges.size() == 1) {
+            hasOccupied = true;
         }
 
         return {cost, hasOccupied};
@@ -46,6 +57,6 @@ public:
             adj[b].push_back({a, e});
         }
 
-        return dfs(0, -1).first;
+        return (int)dfs(0, -1).first;
     }
 };
