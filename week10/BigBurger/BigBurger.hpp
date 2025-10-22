@@ -20,5 +20,6 @@ public:
                 current = 0;
             }
         }
+        return maxtime;
     }
 };
