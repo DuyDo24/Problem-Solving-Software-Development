@@ -35,3 +35,20 @@ calculating the max wait for each customers and simply return the largest one. I
 person, then you subtract it from teh wait person next in line. then if the wait is less than 0 than it remain 0 as the max but the 
 current wait time should be reset to 0 rather than staying at the wait from the previous time. IDK if i explained that alright but
 im going to try and code it and see where i go wrong.
+
+Reflection:
+I shoulve thought about the question because the logic was quite easy to get but i kept stumbling around it, i jsut had to first check 
+if the current was smaller than the arrival[i], if it was than the arrivial[i] would be the new  current becasue there would be 
+no wait time. the wait would simply just e the current - arrival[i] and keep the max everytime. Ijust had to update the current
+with the service[i] everytime which i forgot and messed up my code. Im honestly very sad that i didnt get this in one go.
+
+
+BridgeSort -
+Initial Thoughts:
+This is a classic sorting problem but it invovles char such as T J Q K A meaning i have to create my own sorting pattern, the first
+way i thought of was creating a string with the corrects rankings and then when parsing through the numbers it would first rank it based
+on suit and if they have the same suit it would rank numbers. Because each card is represented by two characters, i would use pair 
+as that logically makes the most sense. The only issue i can forsee is how i would compare sorting trhouhg a string, like does < and >
+work for strings? If it doesnt than im not sure what else to do.
+
+Reflection:
