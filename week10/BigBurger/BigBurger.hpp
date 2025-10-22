@@ -9,16 +9,13 @@ public:
         int n = arrival.size();
         int current = 0;
         for (int i = 0;i< n ;i++){
-            int score;
-            current = arrival[i] + service[i];
-            if (i != n){
-                int temp = (current - arrival[i+1]);
-                score = (temp >= 0) ? temp : 0;
-                maxtime = max(maxtime, score );
-            }
-            if (score == 0){
-                current = 0;
-            }
+            if (current < arrival[i])
+                current = arrival[i];
+
+            int wait = current - arrival[i];  
+            maxtime = max(maxtime, wait);
+
+            current += service[i];  
         }
         return maxtime;
     }
