@@ -52,3 +52,15 @@ as that logically makes the most sense. The only issue i can forsee is how i wou
 work for strings? If it doesnt than im not sure what else to do.
 
 Reflection:
+After a few issues i couldn't figure it out, i had to use two lambda functions, one to first create my own finder and return back the index
+basically giving the right sorting order, and nother function that uses the other lambda function to search for it and sort it out 
+based on the given index in the suits and value string. Other than that the rest of the code was quite simple, i just wasn't sure how
+to implement the lambda functino so its more concise and clean.
+
+
+OVERALL REFLECTION:
+This was the final week of doing these questions every week, i really glad this subject existed because i was already doing leetcode
+and this helped me boost my current coding level by a lot. This weeks questions were quite interesting but really difficult as I
+guess it is the last week. I realised that for logic questions such as the big burger one i need pen and paper so i can reallly go
+through the logic in depth becfore i start coding. I know i would never be able to get BlockEnemy on my own but i understand the 
+solution and why it works. Im really gratefull for this class as i know ill definetly be using this knowledge in the future.
